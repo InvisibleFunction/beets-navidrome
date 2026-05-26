@@ -9,8 +9,7 @@ setup(
     url='https://github.com/InvisibleFunction/beets-navidrome',
     license='MIT',
     platforms='ALL',
-    packages=['beetsplug'],
-    namespace_packages=['beetsplug'],
+    packages=find_namespace_packages(include=['beetsplug']),
     install_requires=[
         'beets>=2.4.0',
         'requests'
